@@ -2,7 +2,7 @@ resource "aws_vpc" "class_c_vpc" {
   cidr_block = "192.168.0.0/16"
 
   tags = {
-    Name = "tf-example"
+    Name = "Class-c-vpc"
   }
 }
 
