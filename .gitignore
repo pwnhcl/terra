@@ -1,3 +1,8 @@
 id_rsa
 id_rsa.pub
 IMA_key.txt
+**/.terraform/*
+terraform.lock.hcl
+terraform.tfstate.lock.info
+terraform.tfstate
+terraform.tfstate.backup
