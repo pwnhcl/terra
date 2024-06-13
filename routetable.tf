@@ -6,7 +6,7 @@ resource "aws_route_table" "Class-C-route" {
     gateway_id = aws_internet_gateway.Class-C-internetgateway.id
   }
 
-  
+
   tags = {
     Name = "Class-C-route"
   }
