@@ -8,7 +8,7 @@ resource "aws_security_group" "allow_tls" {
   }
 
   dynamic "ingress" {
-    for_each = toset([20, 22, 80, 8080, 443, 8081])
+    for_each = toset(var.port)
     content {
       from_port   = ingress.value
       to_port     = ingress.value
