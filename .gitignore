@@ -1,8 +1,13 @@
+# Ignore SSH private and public keys
 id_rsa
 id_rsa.pub
+
+# Ignore specific files
 IMA_key.txt
-**/.terraform/*
 terraform.lock.hcl
 terraform.tfstate.lock.info
 terraform.tfstate
 terraform.tfstate.backup
+
+# Ignore Terraform directories
+**/.terraform/*

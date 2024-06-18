@@ -14,6 +14,7 @@ resource "aws_route_table" "Class-C-route" {
 
 
 resource "aws_route_table_association" "class-c-table" {
-  subnet_id      = aws_subnet.my_subnet.id
+  count = length(var.public_subnet_cidrs)
+  subnet_id      = aws_subnet.public_subnets[count.index].id
   route_table_id = aws_route_table.Class-C-route.id
 }
